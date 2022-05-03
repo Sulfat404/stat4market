@@ -1,0 +1,31 @@
+@import "./fonts";
+
+.section {
+  margin: 0 auto;
+  max-width: 1960px;
+}
+
+.text {
+  font-family: Lato-Bold, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 35px;
+  letter-spacing: 0.02em;
+}
+
+.link {
+  font-family: Lato-Bold, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 35px;
+  letter-spacing: 0.02em;
+}
+
+.btn {
+  background: #CF51CE;
+  border: 0;
+  border-radius: 12px;
+}
+
