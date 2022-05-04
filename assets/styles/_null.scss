@@ -1,12 +1,14 @@
 *,
 *::before,
-*::after, div {
+*::after,
+div {
   box-sizing: border-box;
 }
 
 
 
-ul[class], ol[class] {
+ul[class],
+ol[class] {
   padding: 0;
 }
 
@@ -27,7 +29,8 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   line-height: 1.5;
-  background: #FAFAFA;;
+  background: #FAFAFA;
+  ;
 }
 
 ul[class],
@@ -46,4 +49,5 @@ button {
 img {
   display: block;
   object-fit: cover;
+  margin: 0 auto;
 }

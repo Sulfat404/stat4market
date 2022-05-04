@@ -2,16 +2,69 @@
 
 .section {
   margin: 0 auto;
-  max-width: 1960px;
+  max-width: 1530px;
+}
+
+.title {
+  font-family: Lato-Bold, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 80px;
+}
+
+.subtitle {
+  font-family: Lato-Bold, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  color: #331A2F;
+}
+
+.text_price {
+  font-family: Lato-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: rgba(51, 26, 47, 0.8);
+}
+
+.text_price_numbers {
+  font-family: Lato-Regular, sans-serif;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 42px;
+  color: #CF51CE;
 }
 
 .text {
-  font-family: Lato-Bold, sans-serif;
+  font-family: Lato-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 160%;
+}
+
+
+.btnText {
+  font-family: Lato-Regular, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 23px;
   line-height: 35px;
   letter-spacing: 0.02em;
+}
+
+.subtext {
+  font-family: Lato-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .link {
@@ -23,12 +76,12 @@
   letter-spacing: 0.02em;
   
   &:hover {
-    color: #CF51CE;
+    color: $pink;
   }
 }
 
 .btn {
-  background: #CF51CE;
+  background: $pink;
   border: 0;
   border-radius: 12px;
 }

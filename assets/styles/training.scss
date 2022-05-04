@@ -1,21 +1,21 @@
 @import "./null";
 @import "./fonts";
+@import "./variables";
 @import "./components";
 
-$white: #FFFFFF;
-$black: #331A2F;
-
+// header
 .header {
   margin-top: 20px;
+  margin-bottom: 60px;
   height: 92px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-
+  justify-content: space-between;
 }
 
 .header__logo {
   display: flex;
+  position: relative;
   align-items: center;
   margin-right: 17px;
 }
@@ -35,7 +35,7 @@ $black: #331A2F;
 
 .header__slogan {
   position: relative;
-  max-width: 230px;
+  max-width: 208px;
   width: 100%;
   padding-left: 18px;
 }
@@ -43,6 +43,7 @@ $black: #331A2F;
 .slogan__text {
   font-size: 14px;
   line-height: 18px;
+
   &::before {
     content: "";
     display: block;
@@ -57,24 +58,26 @@ $black: #331A2F;
   }
 }
 
-.header__nav {
-  max-width: 800px;
+.nav {
+  max-width: 45vw;
   width: 100%;
 }
 
 .nav__list {
   display: flex;
+  justify-content: center;
 }
 
 .nav__item {
   display: flex;
   align-items: center;
-  &:first-child {
-    margin-right: 3%;
-  }
-  &:last-child {
 
-    margin-left: 25%;
+  &:first-child {
+    margin-right: 5%;
+  }
+
+  &:last-child {
+    margin-left: 14vw;
   }
 }
 
@@ -83,20 +86,92 @@ $black: #331A2F;
 }
 
 .text__login {
-  padding: 4px 32px 5px 32px;
+  padding: 8px 32px 10px 32px;
   color: $white;
 }
 
 .btn__login {
   display: flex;
   align-items: center;
-
+  .icon__login {
+    margin-right: 15px;
+  }
+  &:hover {
+    box-shadow: #77748c;
+  }
 }
 
 .icon {
   margin-right: 10px;
 }
 
-.icon__login {
-  margin-right: 15px;
+
+
+// main
+.subtext__training {
+  color: rgba(51, 26, 47, 0.5);
+}
+
+.main__info {
+  max-width: 858px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.main__price {
+  display: flex;
+  align-items:flex-end;
+  margin-bottom: 16px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 147px;
+}
+
+.main__title {
+  margin-bottom: 22px;
+  span {
+    color: $pink;
+  }
+}
+
+.main__hero {
+  max-width: 620px;
+  width: 100%;
+  max-height: 604px;
+}
+
+
+// history
+.subtitle__history {
+  margin: 0 auto;
+  max-width: 844px;
+  width: 100%;
+  margin-bottom: 85px;
+}
+
+.history {
+  margin-bottom: 140px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.history__sentence {
+  max-width: 750px;
+  width: 100%;
+}
+
+
+// results
+.subtitle__info {
+  margin: 0 auto;
+
+  max-width: 698px;
+  width: 100%;
+  text-align: center;
 }
