@@ -93,9 +93,11 @@
 .btn__login {
   display: flex;
   align-items: center;
+
   .icon__login {
     margin-right: 15px;
   }
+
   &:hover {
     box-shadow: #77748c;
   }
@@ -122,7 +124,7 @@
 
 .main__price {
   display: flex;
-  align-items:flex-end;
+  align-items: flex-end;
   margin-bottom: 16px;
 }
 
@@ -134,6 +136,7 @@
 
 .main__title {
   margin-bottom: 22px;
+
   span {
     color: $pink;
   }
@@ -167,11 +170,49 @@
 }
 
 
-// results
-.subtitle__info {
+// info
+.info__subtitle {
   margin: 0 auto;
-
+  margin-bottom: 23px;
   max-width: 698px;
   width: 100%;
   text-align: center;
+}
+
+.info__sentence {
+  margin: 0 auto;
+  margin-bottom: 85px;
+  max-width: 846px;
+  text-align: center;
+}
+
+.info__features {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 131px;
+}
+
+.info__feature {
+  max-width: 290px;
+  width: 100%;
+}
+
+.wrapper__svg {
+  margin-bottom: 30px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $pink;
+  box-shadow: 0px 4px 25px rgba(234, 93, 187, 0.25);
+  border-radius: 15px;
+
+  .feature__icon {
+    margin: 0;
+  }
+}
+
+.feature-title {
+  margin-bottom: 15px;
 }
