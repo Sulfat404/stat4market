@@ -57,20 +57,25 @@ $black: #331A2F;
   }
 }
 
-.slogan__text
-
 .header__nav {
-  max-width: 750px;
+  max-width: 800px;
   width: 100%;
 }
 
 .nav__list {
   display: flex;
-  justify-content: flex-start;
 }
 
-.nav__item:last-child {
-  justify-content: flex-end;
+.nav__item {
+  display: flex;
+  align-items: center;
+  &:first-child {
+    margin-right: 3%;
+  }
+  &:last-child {
+
+    margin-left: 25%;
+  }
 }
 
 .nav__link {
@@ -78,6 +83,20 @@ $black: #331A2F;
 }
 
 .text__login {
-  padding: 4px 32px 5px 69px;
+  padding: 4px 32px 5px 32px;
   color: $white;
+}
+
+.btn__login {
+  display: flex;
+  align-items: center;
+
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.icon__login {
+  margin-right: 15px;
 }
