@@ -21,23 +21,25 @@
 }
 
 .header__logo {
+  height: 100%;
   display: flex;
   position: relative;
   align-items: center;
   margin-right: 17px;
 }
 
-.header__img_logo {
-  width: 60px;
-  height: 30px;
+.header__wrapper-img_logo {
   align-self: flex-start;
+}
+
+.header__wrapper-img_stat4market {
+  margin-left: 17px;
+  margin-right: 17px;
 }
 
 .header__img_stat4market {
   width: 162px;
   height: 23px;
-  margin-left: 17px;
-  margin-right: 17px;
 }
 
 .header__slogan {
@@ -66,7 +68,7 @@
 }
 
 .nav {
-  max-width: 45vw;
+  max-width: 750px;
   width: 100%;
 }
 
@@ -84,7 +86,8 @@
   }
 
   &:last-child {
-    margin-left: 14vw;
+    margin-left: 200px;
+
   }
 }
 
@@ -101,13 +104,13 @@
   display: flex;
   align-items: center;
 
-  .icon__login {
-    margin-right: 15px;
-  }
-
   &:hover {
     box-shadow: #77748c;
   }
+}
+
+.icon__login {
+  margin-right: 15px;
 }
 
 .icon {
@@ -189,12 +192,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+
+.history__block {
+  display: flex;
   align-items: center;
 }
 
 .history__sentence {
-  max-width: 750px;
-  width: 100%;
+  max-width: 650px;
 }
 
 
@@ -205,7 +211,7 @@
   max-width: 698px;
   width: 100%;
   text-align: center;
-  
+
   .subtitle_design {
     position: relative;
   }
@@ -241,8 +247,8 @@
 }
 
 .info__feature {
-  max-width: 290px;
-  width: 100%;
+  width: 290px;
+
 }
 
 .wrapper__svg {
@@ -265,19 +271,19 @@
   margin-bottom: 15px;
 }
 
-@media screen and (max-width: 1680px){
+@media screen and (max-width: 1680px) {
   .nav {
     max-width: 40vw;
   }
 
   .nav__item:last-child {
-    margin-left: 9vw;
+    margin-left: 108px;
   }
-  
+
   .main__section::before {
     width: 23px
   }
-  
+
   .history__section::before {
     content: none;
   }
@@ -289,23 +295,57 @@
     height: 458px;
     margin-left: 3vw;
   }
+
   .purchase__img {
     width: 352px;
     height: 362px;
     margin-right: 5vw;
   }
+
   .laptop__img {
     width: 358px;
     height: 358px;
     margin-left: 3vw;
   }
+
   .info__feature {
     width: 225px;
   }
 }
 
-@media screen and (max-width: 1278px){
+@media screen and (max-width: 1278px) {
+  .burger__wrapper {
+    display: block;
+    width: 42px;
+    height: 28px;
+    margin-left: 3vw;
+    cursor: pointer;
+  }
+
+  .burger__stick {
+    margin: 0;
+    width: 42px;
+    height: 4px;
+    background-color: $pink;
+    border-radius: 4px;
+    margin-bottom: 7px;
+
+    &:last-child {
+      width: 32px;
+      margin-bottom: 0;
+      margin-left: 10px;
+    }
+  }
+
+  .slogan__text {
+    font-size: 10px;
+  }
+
   .hero__wrapper-img {
+    display: none;
+  }
+
+  .nav {
     display: none;
   }
 
@@ -322,9 +362,13 @@
     max-width: 482px;
     width: 100%;
   }
+
   .purchase__img {
     width: 270px;
     height: 277px;
+  }
+
+  .history__block {
     margin-bottom: 60px;
   }
 
@@ -337,16 +381,148 @@
     width: 270px;
     height: 270px;
   }
+
   .info__sentence {
     max-width: 680px;
   }
 
   .info__features {
-    flex-wrap: wrap;   
-    justify-content: space-around; 
-    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
+
   .info__feature {
     width: 255px;
+    margin-bottom: 5vw;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .header {
+    justify-content: space-around;
+  }
+
+  .header__logo {
+    height: 100%;
+  }
+
+  .text__login {
+    padding: 8px 20px 10px 20px;
+  }
+
+  .header__img_logo {
+    width: 35.1px;
+    height: 17.74px
+  }
+
+  .header__slogan {
+    display: none;
+  }
+
+  .main__section::before {
+    background: url(../../images/SupermanSmall.png) no-repeat;
+    width: 136px;
+    height: 245px;
+    top: 150px;
+  }
+
+  .main__title {
+    width: 350px;
+  }
+
+  .info__feature {
+    margin-bottom: 10vw;
+  }
+
+  .info__features {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .info__feature {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main {
+    margin-bottom: 80px;
+  }
+
+  .header__img_stat4market {
+    width: 90px;
+    height: 16px;
+    object-fit: unset;
+  }
+
+  .main__sentence {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .history__block {
+    flex-direction: column;
+
+    &:last-child {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+@media screen and (max-width: 556px) {
+  .header__wrapper-img_stat4market {
+    margin: 0;
+  }
+
+  .history {
+    margin-bottom: 0;
+  }
+
+  .text__login {
+    padding: 4px 20px 4px 20px;
+
+    svg {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  .icon__login {
+    margin-right: 8px;
+  }
+
+  .main__title {
+    width: 212px;
+  }
+
+  .main__section::before {
+    width: 116px;
+  }
+
+  .subtitle__history {
+    margin-bottom: 10px;
+  }
+
+  .purchase__img,
+  .laptop__img {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .info__feature {
+    width: 260px;
+  }
+
+  .info__sentence {
+    margin-bottom: 40px;
   }
 }

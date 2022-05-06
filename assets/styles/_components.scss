@@ -2,7 +2,9 @@
 
 .section {
   margin: 0 auto;
-  max-width: 1530px;
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 1500px;
 }
 
 .title {
@@ -110,7 +112,7 @@
 
 @media screen and (max-width: 1440px) {
   .section {
-    max-width: 1220px;
+    max-width: 1200px;
   }
 
   .title {
@@ -146,6 +148,43 @@
 
 @media screen and (max-width: 1278px) {
   .section {
-    max-width: 737px;
+    max-width: 717px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text__login {
+    padding: 8px 20px 10px 20px;
+  }
+  .subtext__training {
+    margin-bottom: 5vw;
+  }
+  .title {
+    font-size: 26px;
+    line-height: 150%;
+  }
+
+  .main__sentence {
+    font-size: 18px;
+    line-height: 160%;
+  }
+
+  .subtitle {
+    font-size: 24px;
+    line-height: 150%;
+  }
+
+  .feature-title {
+    font-size: 20px;
+    line-height: 150%;
+  }
+
+  .feature-text {
+    font-size: 20px;
+    line-height: 150%;    
+  }
+  .text {
+    font-size: 18px;
+    line-height: 160%;   
   }
 }
