@@ -147,6 +147,7 @@
 
 .main {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   margin-bottom: 147px;
 }
@@ -159,10 +160,9 @@
   }
 }
 
-.main__hero {
-  max-width: 620px;
-  width: 100%;
-  max-height: 604px;
+.hero__img {
+  width: 620px;
+  height: 604px;
 }
 
 
@@ -187,6 +187,7 @@
 .history {
   margin-bottom: 140px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -204,15 +205,17 @@
   max-width: 698px;
   width: 100%;
   text-align: center;
-  position: relative;
   
+  .subtitle_design {
+    position: relative;
+  }
 
   .subtitle_design::before {
     content: "";
     position: absolute;
     bottom: -5px;
     right: 0;
-    width: 267px;
+    width: 100%;
     height: 7px;
     background: linear-gradient(264.91deg, #7C4EAB 0.73%, #DD51D4 95.85%);
     border-radius: 5px;
@@ -234,7 +237,7 @@
 .info__features {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 131px;
+  margin-bottom: 10vh;
 }
 
 .info__feature {
@@ -266,10 +269,84 @@
   .nav {
     max-width: 40vw;
   }
+
   .nav__item:last-child {
     margin-left: 9vw;
   }
+  
+  .main__section::before {
+    width: 23px
+  }
+  
   .history__section::before {
     content: none;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .hero__img {
+    width: 458px;
+    height: 458px;
+    margin-left: 3vw;
+  }
+  .purchase__img {
+    width: 352px;
+    height: 362px;
+    margin-right: 5vw;
+  }
+  .laptop__img {
+    width: 358px;
+    height: 358px;
+    margin-left: 3vw;
+  }
+  .info__feature {
+    width: 225px;
+  }
+}
+
+@media screen and (max-width: 1278px){
+  .hero__wrapper-img {
+    display: none;
+  }
+
+  .main__section::before {
+    background: url(../../images/Superman.png) no-repeat;
+    width: 238px;
+    height: 410px;
+    top: 350px;
+    right: 0;
+    left: auto;
+  }
+
+  .main__sentence {
+    max-width: 482px;
+    width: 100%;
+  }
+  .purchase__img {
+    width: 270px;
+    height: 277px;
+    margin-bottom: 60px;
+  }
+
+  .history__sentence {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .laptop__img {
+    width: 270px;
+    height: 270px;
+  }
+  .info__sentence {
+    max-width: 680px;
+  }
+
+  .info__features {
+    flex-wrap: wrap;   
+    justify-content: space-around; 
+    gap: 60px;
+  }
+  .info__feature {
+    width: 255px;
   }
 }
