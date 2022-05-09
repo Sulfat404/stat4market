@@ -401,12 +401,12 @@
     z-index: 40;
     &:first-child {
       top: 50%;
-      transform: translate(50%, 0%) rotate(45deg);  
+      transform: rotate(45deg);  
     }
 
     &:nth-child(2) {
       top: 50%;
-      transform: translate(50%, 0%) rotate(135deg);  
+      transform: rotate(135deg);  
     }
 
     &:last-child {
