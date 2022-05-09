@@ -14,11 +14,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
-
+<body class="body">
   <div class="wrapper">
 
-    
+
     <!-- header -->
     <section class="section">
       <header class="header">
@@ -50,12 +49,21 @@
             <use xlink:href="./assets/icons/svgsprite.svg#login"></use>
           </svg>Войти</button>
         <div class="burger__wrapper">
-          <div class="burger__stick"></div>
-          <div class="burger__stick"></div>
-          <div class="burger__stick"></div>
+          <span class="burger__stick"></span>
+          <span class="burger__stick"></span>
+          <span class="burger__stick"></span>
         </div>
-        
+        <nav class="burger__menu nav">
+          <ul class="burger__menu nav__list">
+            <li class="burger__menu nav__item"><a href="##" class="burger__menu link nav__link">Аналитика</a></li>
+            <li class="burger__menu nav__item"><a href="##" class="burger__menu link nav__link">Обучение</a></li>
+            <li class="burger__menu nav__item">
+              <a href="tel:+74994503141" class="burger__menu link nav__link">8 (499) 450-31-41</a>
+            </li>
+          </ul>
+        </nav>
       </header>
+
     </section>
 
 
@@ -118,7 +126,8 @@
 
     <!-- info -->
     <section class="section">
-      <h2 class="subtitle info__subtitle">Обучение по продажам на маркетплейсах от <span class="subtitle_design">stat<span class="subtitle_number">4</span>market</span>
+      <h2 class="subtitle info__subtitle">Обучение по продажам на маркетплейсах от <span
+          class="subtitle_design">stat<span class="subtitle_number">4</span>market</span>
       </h2>
       <p class="info__sentence text">«Увеличение реальной прибыли, конкретика и ключевые инструменты,
         которые дают результат» — на этом тезисе созданы наши курсы</p>
@@ -164,8 +173,10 @@
         </div>
       </div>
     </section>
-    <script src="./svgSprite.js"></script>
   </div>
+  <script src="./svgSprite.js"></script>
+  <script src="./training.js"></script>
+
 </body>
 
 </html>
