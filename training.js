@@ -2,6 +2,7 @@ const burger = document.querySelector(".burger__wrapper");
 const sticks  = document.querySelectorAll(".burger__stick");
 const menuBurger = document.querySelectorAll(".burger__menu");
 let body = document.querySelector(".body");
+const analytic = document.querySelector(".link.nav__link");
 
 
 burger.addEventListener("click", openBurger);
