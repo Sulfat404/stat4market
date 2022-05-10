@@ -48,7 +48,7 @@
           <svg width="23" height="23" class="icon icon__login">
             <use xlink:href="./assets/icons/svgsprite.svg#login"></use>
           </svg>Войти</button>
-          
+
         <div class="burger__wrapper">
           <span class="burger__stick"></span>
           <span class="burger__stick"></span>
@@ -73,26 +73,31 @@
     <section class="section main__section">
       <p class="subtext subtext__training">Главная &mdash; Обучение</p>
       <div class="main">
-        <div class="main__info">
-          <h1 class="title main__title"><span>Обучающие курсы</span> для поставщиков на маркетплейсы</h1>
-          <div class="text_price main__price">
+        <div class="main__info" itemscope itemtype="https://schema.org/Product">
+          <h1 itemprop="name" class="title main__title"><span>Обучающие курсы</span> для поставщиков на маркетплейсы
+          </h1>
+          <div itemptop="offers" itemscope itemtype="https://schema.org/Offer" class="text_price main__price">
             <svg width="48" height="46" class="icon">
               <use xlink:href="./assets/icons/svgsprite.svg#wallet"></use>
             </svg>
-            от&nbsp;<span class="text_price_numbers">19 900</span>&nbsp;₽
+            от&nbsp;<span itemprop="price" class="text_price_numbers">19 900</span>&nbsp;<span
+              itemprop="priceCurrency">₽</span>
           </div>
-          <p class="main__sentence text">Обучающие курсы по работе и продвижению на маркетплейсах от практикующих
+          <p itemprop="description" class="main__sentence text">Обучающие курсы по работе и продвижению на маркетплейсах
+            от практикующих
             селлеров.</p>
-          <p class="main__sentence text">Добро пожаловать в Академию. Это место для эффективного обучения, где мы
+          <p itemprop="description" class="main__sentence text">Добро пожаловать в Академию. Это место для эффективного
+            обучения, где мы
             рассказываем,
             как работают маркетплейсы и никогда не вдаемся в теорию, которая не понадобится на практике.</p>
-          <p class="main__sentence text">Нащи уроки помогут понять логику работы площадок и взять управление продажами в
+          <p itemprop="description" class="main__sentence text">Нащи уроки помогут понять логику работы площадок и взять
+            управление продажами в
             свои
             руки, а не действовать наугад. Становись экспертом в работе с маркетплейсами и увеличивай свою прибыль.</p>
         </div>
         <picture class="hero__wrapper-img">
-          <source class="hero__img" srcset="./assets/images/SupermanStars.webp" type="image/webp">
-          <img class="hero__img" src="./assets/images/SupermanStars.png" alt="SupermanStars">
+          <source class="hero__img" srcset="./assets/images/SupermanStars.webp" type="image/webp" itemprop="logo">
+          <img class="hero__img" src="./assets/images/SupermanStars.png" alt="SupermanStars" itemprop="logo">
         </picture>
       </div>
     </section>

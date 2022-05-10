@@ -1,3 +1,5 @@
+// Code is needed to display svg icons in Firefox
+
 (function(document, window) {
 	"use strict";
 
